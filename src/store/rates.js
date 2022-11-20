@@ -12,3 +12,7 @@ export function rateReducer(state = initialState, action) {
       return state;
   }
 }
+
+// selector
+export const getAmount = (state) => state.rates.amount;
+export const getCurrencyCode = (state) => state.rates.currencyCode;
