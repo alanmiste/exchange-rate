@@ -1,6 +1,7 @@
 const initialState = {
   amount: "12.00",
   currencyCode: "USD",
+  currencyData: { USD: 1.0 },
 };
 export function rateReducer(state = initialState, action) {
   switch (action.type) {
@@ -16,6 +17,7 @@ export function rateReducer(state = initialState, action) {
 // selector
 export const getAmount = (state) => state.rates.amount;
 export const getCurrencyCode = (state) => state.rates.currencyCode;
+export const getCurrencyData = (state) => state.rates.currencyData;
 
 // action type
 export const AMOUNT_CHANGED = "rates/amountChanged";
