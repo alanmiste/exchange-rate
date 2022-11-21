@@ -13,7 +13,7 @@ import {
 } from "../store/rates";
 
 export function ExchangeRate() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   // const [amount, setAmount] = useState("1.50");
   // const [currencyCode, setCurrencyCode] = useState("USD");
   const amount = useSelector(getAmount);
@@ -23,12 +23,12 @@ export function ExchangeRate() {
   // const [currencyData, setCurrencyData] = useState({ USD: 1.0 });
 
   // fetch the exchange rates the first time
-  useEffect(() => {
-    dispatch(changeCurrencyCode(currencyCode));
-    //   getExchangeRates(currencyCode, supportedCurrencies).then((rates) => {
-    //     setCurrencyData(rates);
-    //   });
-  }, []);
+  // useEffect(() => {
+  //   dispatch(changeCurrencyCode(currencyCode));
+  //   //   getExchangeRates(currencyCode, supportedCurrencies).then((rates) => {
+  //   //     setCurrencyData(rates);
+  //   //   });
+  // }, []);
 
   return (
     <>
